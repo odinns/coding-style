@@ -8,7 +8,6 @@ parameters:
     - tests
 
   level: max
-  checkMissingOverrideMethodAttribute: true
   checkTooWideReturnTypesInProtectedAndPublicMethods: true
   reportPossiblyNonexistentGeneralArrayOffset: true
   reportPossiblyNonexistentConstantArrayOffset: true

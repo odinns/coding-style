@@ -6,6 +6,7 @@ use Odinns\CodingStyle\OdinnsRectorConfig;
 use Rector\Configuration\Option;
 use Rector\Configuration\Parameter\SimpleParameterProvider;
 use Rector\Config\RectorConfig;
+use Rector\Php83\Rector\ClassMethod\AddOverrideAttributeToOverriddenMethodsRector;
 use Rector\TypeDeclaration\Rector\StmtsAwareInterface\DeclareStrictTypesRector;
 
 it('can be applied to a Rector config', function (): void {
@@ -21,6 +22,13 @@ it('registers strict types as a shared Rector rule', function (): void {
 
     expect(SimpleParameterProvider::provideArrayParameter(Option::REGISTERED_RECTOR_RULES))
         ->toContain(DeclareStrictTypesRector::class);
+});
+
+it('does not add override attributes to overridden methods', function (): void {
+    OdinnsRectorConfig::setup(new RectorConfig());
+
+    expect(SimpleParameterProvider::provideArrayParameter(Option::SKIP))
+        ->toContain(AddOverrideAttributeToOverriddenMethodsRector::class);
 });
 
 it('ships copy-ready consumer stubs', function (): void {

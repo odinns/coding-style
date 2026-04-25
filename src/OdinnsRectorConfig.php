@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Odinns\CodingStyle;
 
 use Rector\Config\RectorConfig;
+use Rector\Php83\Rector\ClassMethod\AddOverrideAttributeToOverriddenMethodsRector;
 use Rector\Set\ValueObject\SetList;
 use Rector\TypeDeclaration\Rector\StmtsAwareInterface\DeclareStrictTypesRector;
 use Rector\ValueObject\PhpVersion;
@@ -42,6 +43,10 @@ final class OdinnsRectorConfig
             AddGenericReturnTypeToRelationsRector::class,
             ModelCastsPropertyToCastsMethodRector::class,
             ValidationRuleArrayStringValueToArrayRector::class,
+        ]);
+
+        $rectorConfig->skip([
+            AddOverrideAttributeToOverriddenMethodsRector::class,
         ]);
 
         $rectorConfig->importNames();
