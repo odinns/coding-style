@@ -1,0 +1,8 @@
+includes:
+  - phpstan.neon
+  - ../../../larastan/larastan/extension.neon
+
+parameters:
+  checkModelProperties: true
+  checkOctaneCompatibility: true
+

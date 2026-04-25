@@ -1,0 +1,15 @@
+includes:
+  - vendor/phpstan/phpstan-deprecation-rules/rules.neon
+  - vendor/phpstan/phpstan-mockery/extension.neon
+
+parameters:
+  paths:
+    - src
+    - tests
+
+  level: max
+  checkMissingOverrideMethodAttribute: true
+  checkTooWideReturnTypesInProtectedAndPublicMethods: true
+  reportPossiblyNonexistentGeneralArrayOffset: true
+  reportPossiblyNonexistentConstantArrayOffset: true
+  treatPhpDocTypesAsCertain: false

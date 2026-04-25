@@ -1,0 +1,60 @@
+{
+  "name": "odinns/coding-style",
+  "description": "Shared Rector and PHPStan defaults for Laravel projects.",
+  "type": "library",
+  "keywords": [
+    "coding-style",
+    "laravel",
+    "larastan",
+    "phpstan",
+    "rector"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Odinn Adalsteinsson"
+    }
+  ],
+  "require": {
+    "php": "^8.4",
+    "driftingly/rector-laravel": "^2.3",
+    "larastan/larastan": "^3.9",
+    "phpstan/phpstan": "^2.1",
+    "phpstan/phpstan-deprecation-rules": "^2.0",
+    "phpstan/phpstan-mockery": "^2.0",
+    "rector/rector": "^2.4"
+  },
+  "require-dev": {
+    "pestphp/pest": "^4.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Odinns\\CodingStyle\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Odinns\\CodingStyle\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "pest",
+    "test:types": "phpstan analyse",
+    "test:refactor": "rector process --dry-run",
+    "test:all": [
+      "@test:composer",
+      "@test:types",
+      "@test:refactor",
+      "@test"
+    ],
+    "test:composer": "composer validate --strict"
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}

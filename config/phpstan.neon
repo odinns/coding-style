@@ -1,0 +1,11 @@
+includes:
+  - ../../../phpstan/phpstan-deprecation-rules/rules.neon
+  - ../../../phpstan/phpstan-mockery/extension.neon
+
+parameters:
+  checkMissingOverrideMethodAttribute: true
+  checkTooWideReturnTypesInProtectedAndPublicMethods: true
+  reportPossiblyNonexistentGeneralArrayOffset: true
+  reportPossiblyNonexistentConstantArrayOffset: true
+  treatPhpDocTypesAsCertain: false
+

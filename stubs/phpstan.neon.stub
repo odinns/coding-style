@@ -1,0 +1,18 @@
+includes:
+  - vendor/odinns/coding-style/config/larastan.neon
+
+parameters:
+  paths:
+    - app
+    - bootstrap
+    - config
+    - database
+    - routes
+    - tests
+
+  level: 5
+
+  # Keep baselines and project-specific ignores here.
+  # includes:
+  #   - phpstan-baseline.neon
+
