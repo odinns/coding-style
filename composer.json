@@ -4,12 +4,20 @@
   "type": "library",
   "keywords": [
     "coding-style",
+    "code-quality",
     "laravel",
     "larastan",
+    "php",
     "phpstan",
-    "rector"
+    "rector",
+    "static-analysis"
   ],
+  "homepage": "https://github.com/odinns/coding-style",
   "license": "MIT",
+  "support": {
+    "issues": "https://github.com/odinns/coding-style/issues",
+    "source": "https://github.com/odinns/coding-style"
+  },
   "authors": [
     {
       "name": "Odinn Adalsteinsson"

@@ -4,6 +4,11 @@ All notable changes to `odinns/coding-style` will be documented in this file.
 
 ## Unreleased
 
+## 1.0.2 - 2026-04-25
+
+- Add Packagist metadata, support links, and discovery keywords.
+- Add public-package release files for contribution, security, and conduct expectations.
+
 ## 1.0.1 - 2026-04-25
 
 - Stop adding `#[Override]` attributes to overridden methods.
