@@ -34,7 +34,6 @@ final class OdinnsRectorConfig
             SetList::PHP_81,
             SetList::PHP_82,
             SetList::PHP_83,
-            SetList::PHP_84,
             SetList::PHP_POLYFILLS,
         ]);
 
@@ -50,7 +49,7 @@ final class OdinnsRectorConfig
         ]);
 
         $rectorConfig->importNames();
-        $rectorConfig->phpVersion(PhpVersion::PHP_84);
+        $rectorConfig->phpVersion(PhpVersion::PHP_83);
     }
 
     private static function loadProjectPhpstanConfig(RectorConfig $rectorConfig, string $projectRoot): void

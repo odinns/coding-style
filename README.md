@@ -8,7 +8,7 @@ That split matters. Shared config should describe current taste. Local config sh
 
 ## Requirements
 
-- PHP `^8.4`
+- PHP `^8.3`
 - Composer 2
 - Rector 2
 - PHPStan 2
@@ -211,7 +211,7 @@ The shared Rector setup enables conservative automated improvements:
 - early returns
 - import cleanup
 - required `declare(strict_types=1);` declarations
-- PHP 8.4 set support
+- PHP 8.3 set support
 - Laravel relation generic return types
 - Laravel model casts method migration
 - Laravel validation rule array conversion

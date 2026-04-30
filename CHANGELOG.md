@@ -4,6 +4,11 @@ All notable changes to `odinns/coding-style` will be documented in this file.
 
 ## Unreleased
 
+## 1.0.3 - 2026-04-30
+
+- Allow installation on PHP 8.3.
+- Target PHP 8.3 in the shared Rector config.
+
 ## 1.0.2 - 2026-04-25
 
 - Add Packagist metadata, support links, and discovery keywords.
